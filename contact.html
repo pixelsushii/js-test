@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-es="Contacto - Hylia Help" data-en="Contact - Hylia Help">Contacto - Hylia Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <button id="main-button">Cambiar modo</button>
+    <select id="language-select" aria-label="Language">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+    </select>
+
+    <header>
+        <h1>Hylia Help</h1>
+        <p data-es="¡Ayuda personalizada para todos los juegos de The Legend of Zelda!" data-en="Personalized help for all The Legend of Zelda games!">¡Ayuda personalizada para todos los juegos de The Legend of Zelda!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" data-es="Sobre nosotros" data-en="About us">Sobre nosotros</a></li>
+                <li><a href="services.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+                <li><a href="contact.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+            <p data-es="Cuéntanos qué juego estás jugando y qué necesitas: santuarios, kologs, poes, bichos dorados, misiones, armaduras, etc." data-en="Tell us which game you're playing and what you need: shrines, Koroks, Poes, Golden Bugs, quests, armor, and more.">
+                Cuéntanos qué juego estás jugando y qué necesitas: santuarios, kologs, poes, bichos dorados,
+                misiones, armaduras, etc.
+            </p>
+
+            <form action="#" method="post">
+                <label for="name" data-es="Nombre:" data-en="Name:">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email" data-es="Correo electrónico:" data-en="Email address:">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="game" data-es="Juego de la saga:" data-en="Game in the series:">Juego de la saga:</label><br>
+                <input type="text" id="game" name="game" required><br><br>
+
+                <label for="message" data-es="Qué necesitas:" data-en="What do you need?">Qué necesitas:</label><br>
+                <textarea id="message" name="message" rows="5" required
+                    data-placeholder-es="Ejemplo: Quiero todos los santuarios de BOTW y una ruta para los kologs."
+                    data-placeholder-en="Example: I want every shrine in BOTW and a route to find the Koroks."
+                    placeholder="Ejemplo: Quiero todos los santuarios de BOTW y una ruta para los kologs.">
+                </textarea>
+
+                <button type="submit" data-es="Enviar solicitud" data-en="Send request">Enviar solicitud</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p data-es="© 2026 Hylia Help - Ayuda Zelda personalizada" data-en="© 2026 Hylia Help - Personalized Zelda help">© 2026 Hylia Help - Ayuda Zelda personalizada</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
