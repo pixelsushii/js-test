@@ -8,19 +8,8 @@ let dark = false;
 
 // Función para cambiar de modo
 function changeMode() {
-
-    if (dark === false) {
-        body.style.backgroundColor = "black";
-        body.style.color = "white";
-
-        dark = true;
-    }
-    else {
-        body.style.backgroundColor = "rgb(86, 169, 45)";
-        body.style.color = "black";
-
-        dark = false;
-    }
+    dark = !dark;
+    body.classList.toggle("dark-mode", dark);
 }
 
 // Evento click

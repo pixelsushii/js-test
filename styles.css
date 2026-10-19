@@ -9,6 +9,12 @@ body {
     background-size: 150px;
 }
 
+body.dark-mode {
+    background-color: black;
+    color: white;
+    background-image: url("darklink.png");
+}
+
 header {
     background-color: #0e7025;
     padding: 20px;
